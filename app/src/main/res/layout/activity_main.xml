@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_APDU"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txt_AID"
+        app:layout_constraintStart_toStartOf="@+id/txt_AID"
+        app:layout_constraintTop_toBottomOf="@+id/txt_AID" />
+
+    <Button
+        android:id="@+id/btn_Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Connect"
+        app:layout_constraintStart_toStartOf="@+id/btn_Connect"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Connect" />
+
+    <EditText
+        android:id="@+id/txt_AID"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_AID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Result"
+        android:layout_width="380dp"
+        android:layout_height="555dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_APDU" />
+</android.support.constraint.ConstraintLayout>
